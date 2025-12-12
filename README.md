@@ -1,6 +1,6 @@
 ## **Understanding Age – Gender Distortion**
 
-**Code Cell 1** looks at how gender and age dimensions relate to each other in your dataset.  
+**Code Cell 1** looks at how gender and age dimensions relate to each other in the dataset.  
 It calculates a Pearson correlation between the main gender and age scores, including confidence intervals, p-values, Bayes factors, and statistical power.  
 Then it builds two correlation matrices—one for gender features and one for age features—and displays them as heatmaps, so you can see how these latent dimensions align with each other.
 
@@ -9,14 +9,14 @@ It prints a regression summary and creates two plots:
 a static regression plot with highlighted outliers, and an interactive Plotly plot where you can hover over each point to see the category.  
 This gives you a visual sense of whether gender scores push age predictions up or down.
 
-**Code Cell 3** moves into your behavioral dataset.  
+**Code Cell 3** moves into the behavioral dataset.  
 Here, for each occupation, it computes the difference between the treatment group’s age estimate and the control group’s average age.  
 Then it plots two kernel density curves—one for male images and one for female images—plus vertical lines marking each mean difference.  
 That visualization shows how the gender of the image shifts age judgments.
 
 **Code Cell 4** performs three statistical tests.  
-First, a Welch t-test comparing raw age estimates for male versus female images.  
-Then two one-sample t-tests—one for female-image age differences and one for male-image age differences—testing whether those shifts differ from zero.  
+First, a t-test comparing raw age estimates for male versus female images in the treatment group.  
+Then two one-sample t-tests—one for female-image age differences and one for male-image age differences—testing how much the age approximations of the treatment group differ from reality.  
 It outputs the mean differences, t-values, and p-values for all three tests.
 
 **Code Cell 5** fits a full regression model with condition, gender, their interaction, category, and subject.  
