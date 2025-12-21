@@ -1,5 +1,7 @@
 ## **Understanding Age – Gender Distortion**
 
+Please execute code cells with order.
+
 **Code Cell 1** looks at how gender and age dimensions relate to each other in the dataset.  
 It calculates a Pearson correlation between the main gender and age scores, including confidence intervals, p-values, Bayes factors, and statistical power.  
 Then it builds two correlation matrices—one for gender features and one for age features—and displays them as heatmaps, so you can see how these latent dimensions align with each other.
